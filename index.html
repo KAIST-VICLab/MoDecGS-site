@@ -273,7 +273,7 @@ explicitly deforms the reconstructed 3D Gaussians with a shared hexplane. During
         existing methods struggle with storage demands and representing complex real-world motions. To tackle these issues,
          we propose MoDecGS, a memory-efficient Gaussian splatting framework designed for reconstructing novel views in challenging 
          scenarios with complex motions. We introduce GlobaltoLocal Motion Decomposition (GLMD) to effectively capture dynamic motions
-          in a coarsetofine manner. This approach leverages Global Canonical Scaffolds (Global CS) and Local Canonical Scaffolds (Local CS), 
+          in a coarse-to-fine manner. This approach leverages Global Canonical Scaffolds (Global CS) and Local Canonical Scaffolds (Local CS), 
           extending static Scaffold representation to dynamic video reconstruction. For Global CS, we propose Global Anchor Deformation (GAD) 
           to efficiently represent global dynamics along complex motions, by directly deforming the implicit Scaffold attributes
            which are anchor position, offset, and local context features. Next, we finely adjust local motions via the Local Gaussian 
@@ -340,7 +340,7 @@ explicitly deforms the reconstructed 3D Gaussians with a shared hexplane. During
       <div class="column is-full">
         <image src="./static/image/quantitative_results1-1.png" class="img-responsive" alt="quantitative_results"><br>
         <div class="content has-text-justified">
-          <strong style="color: black;">Quantitative results comparison of novel view synthesis</strong> on Dycheck-iPhone [<span style="color: blue;">14</span>] and HyperNeRF [<span style="color: blue;">43</span>] monocular datasets. 
+          <strong style="color: black;">Quantitative results comparison of novel view synthesis</strong> on Dycheck-iPhone [<span style="color: blue;">16</span>] and HyperNeRF [<span style="color: blue;">45</span>] monocular datasets. 
             All results were locally re-generated in our environment and averaged across all sequences of the dataset. 
             Red and blue denote the best and second best performances, respectively. For iPhone dataset, the masked metrics are calculated using the masks provided the authors. 
         <br><br>
@@ -348,7 +348,7 @@ explicitly deforms the reconstructed 3D Gaussians with a shared hexplane. During
             <image src="./static/image/quantitative_results2-1.png" class="img-responsive" alt="quantitative_results2"><br>
             
               Performance comparison with a NeRF-extension framework, including training and rendering speed. Averaged over 
-              536×960 HyperNeRF’s vrig datasets [<span style="color: blue;">43</span>]. The performance numbers of [<span style="color: blue;">10, 16, 20, 42, 43</span>] are sourced from [<span style="color: blue;">52</span>].  
+              536×960 HyperNeRF’s vrig datasets [<span style="color: blue;">43</span>]. The performance numbers of [<span style="color: blue;">11, 18, 22, 44, 45</span>] are sourced from [<span style="color: blue;">54</span>].  
         </div>
       </div>
     </div>
@@ -367,14 +367,13 @@ explicitly deforms the reconstructed 3D Gaussians with a shared hexplane. During
     <section class="section" id="BibTeX">
       <div class="container is-widescreen content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>
-          @misc{kwak2025modecgsglobaltolocalmotiondecomposition,
-            title={MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting}, 
-            author={Sangwoon Kwak and Joonsoo Kim and Jun Young Jeong and Won-Sik Cheong and Jihyong Oh and Munchurl Kim},
-            year={2025},
-            eprint={2501.03714},
-            archivePrefix={arXiv},
-    }</code></pre>
+        <pre><code>@misc{kwak2025modecgsglobaltolocalmotiondecomposition,
+  title={MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting}, 
+  author={Sangwoon Kwak and Joonsoo Kim and Jun Young Jeong and Won-Sik Cheong and Jihyong Oh and Munchurl Kim},
+  year={2025},
+  eprint={2501.03714},
+  archivePrefix={arXiv},
+}</code></pre>
       </div>
     </section>
 
@@ -399,6 +398,7 @@ explicitly deforms the reconstructed 3D Gaussians with a shared hexplane. During
           </p>
         </div>
       </div>
+      <a href="https://mapmyvisitors.com/web/1bxcb"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=P54yP9sTH-y82krx7hQX7QwHpWO6PZDIOzFFYepwHwU&cl=ffffff" /></a>
     </div>
   </div>
 </footer>
